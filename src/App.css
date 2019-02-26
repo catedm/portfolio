@@ -1,33 +1,67 @@
-.App {
+html {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+nav ul a {
+  color: #fff;
+  font-size: 6rem;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.line {
+  height: 4px;
+  background: #000;
+  margin-bottom: 5px;
+  width: 40px;
+  border-radius: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.burger-container.outer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.burger-container.inner {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.trails-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trails-text {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 5em;
+  font-weight: 800;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trails-text a {
+  color: #fff;
+}
+
+.trails-text > div {
+  overflow: hidden;
+}
+
+.fab .margin-right {
+  margin-right: 30px
 }
